@@ -1,0 +1,275 @@
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+#wrapper {
+	flex: 1 0 auto;
+}
+footer {
+	flex: 0 0 auto;
+}
+footer .container {
+	padding: 15px 0;
+	border-top: 1px solid #ccc;
+	margin-top: 30px;
+	color: #aaa;
+	text-align: center;
+}
+.container {
+	box-sizing: border-box;
+	margin:0 auto;
+	max-width: 820px;
+	min-width: 320px;
+}
+
+/* Атомарные классы */
+
+.bimg, .bimg img {
+	display: block;
+	width: 100%;
+}
+
+form td {
+	padding: 5px 0;
+}
+form label {
+	margin-right: 10px;
+}
+
+.tag_area {
+	display: flex;
+	margin-bottom: 10px;
+}
+.tag_area .tag {
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 5px;
+	background: #eee;
+	padding: 0 7px 4px;
+}
+
+/* Основное */
+
+header {
+	margin-bottom: 30px;
+}
+header .row.c1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+header .contact_area {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+header .row.c2 {
+	background: #1a1a1a;
+	display: flex;
+	padding: 10px 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 20px 0 0;
+}
+header .cart_area {
+	display: flex;
+}
+header .ico {
+	display: block;
+	min-width: 18px;
+	height: 18px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+header .ico.favorite {
+	background: url(images/favorite.png);
+}
+header .ico.cart {
+	background: url(images/cart.png) no-repeat;
+}
+header .ico.cart.has .count {
+	background: #f6f5f1;
+	border-radius: 2px;
+	padding: 3px 7px;
+	font-size: 0.9em;
+	margin-left: 25px;
+}
+
+#user_area .profile {
+	display: flex;
+}
+#user_area .avatar {
+	margin-right: 7px;
+	display: block;
+}
+#user_area .exit {
+	background: #0078D7;
+	display: inline-block;
+	color: #fff;
+	padding: 2px 5px 3px;
+	text-decoration: none;
+	margin-top: 5px;
+}
+
+#catalog_list {
+	display: flex;
+	gap: 20px;
+}
+#catalog_list .categories {
+	min-width: 200px;
+}
+#catalog_list .cat_link {
+	display: block;
+	padding: 5px 10px;
+}
+#catalog_list .cat_link.active, #catalog_list .cat_link:hover {
+	background: #eee;
+}
+#catalog_list .wrap {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+#catalog_list .item {
+	border: 1px solid #bebebe;
+}
+#catalog_list .inner {
+	padding: 10px;
+}
+#catalog_list .name {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+#catalog_list .more {
+	background: #0078D7;
+	color: #fff;
+	text-decoration: none;
+	padding: 3px;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+#catalog_item {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+}
+#catalog_item .title {
+	margin: 0 0 20px;
+}
+#catalog_item .price_area {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+#catalog_item .price {
+	font-size: 1.4em;
+	color: #0078D7;
+}
+#catalog_item .in_cart {
+	display: inline-block;
+	background: #0078D7;
+	color: #fff;
+	text-decoration: none;
+	padding: 3px 10px 5px;
+}
+
+#post_list .item {
+	margin: 20px 0;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+#post_list .item:first-child {
+	margin-top: 0;
+}
+#post_list .item:last-child {
+	border: 0;
+}
+#post_list .data {
+	color: #969696;
+	font-size: 0.9em;
+}
+#post_list .more {
+	color: #0078D7;
+	margin-top: 5px;
+	display: inline-block;
+}
+
+#post_item .data {
+	color: #969696;
+	font-size: 0.9em;
+}
+
+
+#cart .preview {
+	max-width: 80px;
+}
+#cart table {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+#cart td, #cart th {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+}
+#cart svg.close.icon {
+	/* display: block; */
+	width: 24px;
+	height: 24px;
+	fill: none;
+	stroke: black;
+}
+/*#cart .item {
+	display: flex;
+	border-bottom: 1px solid #bebebe;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	gap: 20px;
+}
+#cart .inner {
+	flex-grow: 1;
+}
+#cart .preview {
+	max-width: 100px;
+}
+#cart .name {
+	margin: 0 0 20px;
+}*/
+
+#admin .field {
+	display: block;
+	min-width: 400px;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+/* Адаптив */
+
+@media all and (min-width: 951px) {
+	.nob {
+		display: none;
+	}
+	
+}
+@media all and (max-width: 950px) {
+	.container:not(.cpn) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.nom {
+		display: none;
+	}
+
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/favicon.png">
+<title>Магазин</title>
+<link rel="stylesheet" href="/static/custom.css">
+</head>
+<body>
+<div id="wrapper">
+	<div class="container">
+		<header>
+			<div class="row c1">
+				<a href="/" id="logo"><img src="/static/images/logo.png" alt=""></a>
+				<div class="contact_area">
+					<a href="" class="phone">+7 900 123-45-67</a>
+					<a href="" class="email">reply@shop.ru</a>
+				</div>
+				<div id="user_area">
+					<!-- <a href="/login">Log In</a> | <a href="/reg">Sign Up</a> -->
+					<div class="profile">
+						<img src="/static/images/avatar.png" alt="" class="avatar">
+						<div class="name">Вы вошли как <a href="/profile">Nixtone</a>,<br> <a href="" class="exit">Выйти</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="row c2">
+				<nav>
+					<a href="/">Главная</a>
+					<a href="/catalog">Каталог</a>
+					<a href="/post">Посты</a>
+				</nav>
+				<div class="cart_area">
+					<a href="/favorite" class="ico favorite"></a>
+					<a href="/cart" class="ico cart has"><span class="count">2</span></a>
+				</div>
+			</div>
+		</header>
+		
+		<h1>Новый пост</h1>
+
+<div id="admin">
+	<form action="" method="post">
+		<table>
+			<tr>
+				<td><label for="adm_post_name">Заголовок</label></td>
+				<td><input type="text" name="" id="adm_post_name" class="field"></td>
+			</tr>
+			<tr>
+				<td><label for="adm_post_price">Цена</label></td>
+				<td><input type="text" name="" id="adm_post_price" class="field"></td>
+			</tr>
+			<tr>
+				<td><label for="adm_post_tag">Теги</label></td>
+				<td>
+					<select name="" id="adm_post_tag" multiple class="field">
+						<option value="">Тест 1</option>
+						<option value="">Тест 2</option>
+						<option value="">Тест 3</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="adm_post_anons">Анонс</label></td>
+				<td>
+					<textarea name="" id="adm_post_anons" rows="10" class="field"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="adm_post_text">Текст</label></td>
+				<td>
+					<textarea name="" id="adm_post_text" rows="10" class="field"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Создать"></td>
+			</tr>
+		</table>
+	</form>
+</div>
+	</div>
+</div>
+<footer>
+	<div class="container">&copy; 2022. Магазин барахла</div>
+</footer>
+</body>
+</html>
