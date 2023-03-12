@@ -5,7 +5,7 @@ return [
 	'DESIGN' => "design.php",
 
 	// Формирование статической страницы
-	'STATIC' => 1,
+	'STATIC' => 0,
 
 	// Разделы
 	'ROUTES' => [

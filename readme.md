@@ -10,6 +10,7 @@ created_at
 ### Tag  
 id  
 name  
+translit  
 created_at  
 
 ### Post  
@@ -27,10 +28,10 @@ name
 translit  
 price  
 descr  
-cat_id  
+category_id (fk)  
 active  
 created_at  
 
 ### PostTag  
-post_id  
-tag_id  
+post_id (fk)  
+tag_id (fk)  

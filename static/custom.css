@@ -33,13 +33,6 @@ footer .container {
 	width: 100%;
 }
 
-form td {
-	padding: 5px 0;
-}
-form label {
-	margin-right: 10px;
-}
-
 .tag_area {
 	display: flex;
 	margin-bottom: 10px;
@@ -51,6 +44,54 @@ form label {
 	background: #eee;
 	padding: 0 7px 4px;
 }
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+table.list td,
+table.list th {
+	padding: 7px;
+	border: 1px solid;
+	vertical-align: top;
+}
+
+.field {
+	padding: 5px;
+	max-width: 300px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	font-family: Helvetica;
+	font-size: 0.8em;
+}
+
+/*
+form td {
+	padding: 5px 0;
+	vertical-align: top;
+}
+form label {
+	margin-right: 10px;
+}
+
+
+
+.table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.table td, .table th {
+	border: 1px solid;
+	padding: 5px 7px 7px;
+}
+#admin .field {
+	display: block;
+	min-width: 400px;
+	box-sizing: border-box;
+	padding: 5px;
+}
+*/
 
 /* Основное */
 
@@ -131,7 +172,8 @@ header .ico.cart.has .count {
 	display: block;
 	padding: 5px 10px;
 }
-#catalog_list .cat_link.active, #catalog_list .cat_link:hover {
+#catalog_list .cat_link.active, 
+#catalog_list .cat_link:hover {
 	background: #eee;
 }
 #catalog_list .wrap {
@@ -225,35 +267,13 @@ header .ico.cart.has .count {
 	padding: 10px 0;
 }
 #cart svg.close.icon {
-	/* display: block; */
 	width: 24px;
 	height: 24px;
 	fill: none;
 	stroke: black;
 }
-/*#cart .item {
-	display: flex;
-	border-bottom: 1px solid #bebebe;
-	margin-bottom: 20px;
-	padding-bottom: 20px;
-	gap: 20px;
-}
-#cart .inner {
-	flex-grow: 1;
-}
-#cart .preview {
-	max-width: 100px;
-}
-#cart .name {
-	margin: 0 0 20px;
-}*/
 
-#admin .field {
-	display: block;
-	min-width: 400px;
-	box-sizing: border-box;
-	padding: 5px;
-}
+
 
 /* Адаптив */
 
