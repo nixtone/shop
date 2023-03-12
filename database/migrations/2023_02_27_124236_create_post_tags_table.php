@@ -13,15 +13,10 @@ return new class extends Migration
     {
         Schema::create('post_tags', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('post_id')->nullable();
-            $table->unsignedBigInteger('tag_id')->nullable();
+            $table->foreignId('post_id')->constrained();
+            $table->foreignId('tag_id')->constrained();
             $table->timestamps();
 
-            $table->index('post_id', 'post_tag_idx');
-            $table->foreign('post_id', 'post_tag_fk')->on('Posts')->references('id');
-
-            $table->index('tag_id', 'tag_post_idx');
-            $table->foreign('tag_id', 'tag_post_fk')->on('Tags')->references('id');
         });
     }
 

@@ -14,14 +14,12 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->float('price');
+            $table->string('translit');
+            $table->float('price', 11);
             $table->text('descr');
-            $table->unsignedBigInteger('cat_id')->nullable();
+            $table->foreignId('category_id')->constrained();
             $table->integer('active')->default(1);
             $table->timestamps();
-
-            $table->index('cat_id', 'product_cat_idx');
-            $table->foreign('cat_id', 'product_cat_fk')->on('Categories')->references('id');
         });
     }
 

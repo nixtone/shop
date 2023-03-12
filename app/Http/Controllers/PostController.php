@@ -9,10 +9,16 @@ class PostController extends Controller
 {
     public function list() {
         $posts = Post::all();
-        dd($posts);
+
         return view('post.list', compact('posts'));
     }
-    public function item(Post $post) {
+    public function item($translit) {
+        //dump('test inner post');
+        //dd($translit);
+
+        $post = Post::where('translit', $translit)->get()->first();
+
+
         return view('post.item', compact('post'));
     }
 

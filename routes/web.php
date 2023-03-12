@@ -22,4 +22,4 @@ Route::get('/catalog', [CatalogController::class, 'list']);
 Route::get('/catalog/{product}', [CatalogController::class, 'item']);
 
 Route::get('/post', [PostController::class, 'list']);
-Route::get('/post/{post}', [PostController::class, 'item']);
+Route::get('/post/{translit}', [PostController::class, 'item']);

@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->unique();
+            $table->string('translit')->unique();
             $table->text('anons');
             $table->text('text');
             $table->integer('active')->default(1);
